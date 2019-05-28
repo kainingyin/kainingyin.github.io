@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>node模块 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://kainingyin.github.io/index.html">
+  <meta name="description" content="1.模块系统let http = require(“http”);  //引入http模块，引入http模块就可以搭建node服务器 let fs = require(“fs”);  //引入fs模块，引入fs模块之后就可以进行文件读写 在node中常用的模块 : fs   url   querystring   path   http 在node中，写了很多模块，每一个模块都有特定的功能 123">
+<meta property="og:type" content="article">
+<meta property="og:title" content="node模块">
+<meta property="og:url" content="https://kainingyin.github.io/2019/05/28/Node/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.模块系统let http = require(“http”);  //引入http模块，引入http模块就可以搭建node服务器 let fs = require(“fs”);  //引入fs模块，引入fs模块之后就可以进行文件读写 在node中常用的模块 : fs   url   querystring   path   http 在node中，写了很多模块，每一个模块都有特定的功能 123">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-28T11:06:02.199Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="node模块">
+<meta name="twitter:description" content="1.模块系统let http = require(“http”);  //引入http模块，引入http模块就可以搭建node服务器 let fs = require(“fs”);  //引入fs模块，引入fs模块之后就可以进行文件读写 在node中常用的模块 : fs   url   querystring   path   http 在node中，写了很多模块，每一个模块都有特定的功能 123">
   
     <link rel="alternate" href="/kainingyin.github.io/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,53 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-node模块" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/kainingyin.github.io/2019/05/28/node模块/" class="article-date">
-  <time datetime="2019-05-28T04:33:09.000Z" itemprop="datePublished">2019-05-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/kainingyin.github.io/2019/05/28/node模块/">node模块</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-模块系统"><a href="#1-模块系统" class="headerlink" title="1.模块系统"></a>1.模块系统</h1><p>let http = require(“http”);  //引入http模块，引入http模块就可以搭建node服务器</p>
-<p>let fs = require(“fs”);  //引入fs模块，引入fs模块之后就可以进行文件读写</p>
-<p>在node中常用的模块 : fs   url   querystring   path   http</p>
-<p>在node中，写了很多模块，每一个模块都有特定的功能</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;!--在没有模块系统之前，js的引入是有顺序要求的 --&gt;</span><br><span class="line">		&lt;script src=”./a.js”&gt; &lt;/script&gt;</span><br><span class="line">		&lt;script src=”./b.js”&gt; &lt;/script&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<h6 id="1-1-没有使用模块化规范会产生的问题："><a href="#1-1-没有使用模块化规范会产生的问题：" class="headerlink" title="1.1.没有使用模块化规范会产生的问题："></a>1.1.没有使用模块化规范会产生的问题：</h6><p>1.加载js的时候，浏览器会停止网页渲染，加载文件越多，网页失去响应的时间就会越长</p>
-<p>2 .js文件之间存在依赖关系，因此必须严格保证加载顺序（比如上例的1.js要在2.js的前面），依赖性最大的模块一定要放到最后加载，当依赖关系很复杂的时候，代码的编写和维护都会变得困难。</p>
-<p>3.多个js文件中声明了同名的变量的时候，会出现命名污染的问题</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://kainingyin.github.io/2019/05/28/node模块/" data-id="cjw7p4nxa0002b0l2xpwy1fwp" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Node" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Node" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/kainingyin.github.io/2019/05/28/Node/" class="article-date">
   <time datetime="2019-05-28T04:33:09.000Z" itemprop="datePublished">2019-05-28</time>
@@ -119,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/kainingyin.github.io/2019/05/28/Node/">node模块</a>
+    <h1 class="article-title" itemprop="name">
+      node模块
     </h1>
   
 
@@ -215,169 +173,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-关于冒泡排序-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/kainingyin.github.io/2019/04/24/关于冒泡排序-1/" class="article-date">
-  <time datetime="2019-04-24T08:32:34.000Z" itemprop="datePublished">2019-04-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/kainingyin.github.io/2019/05/28/node模块/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/kainingyin.github.io/2019/04/24/关于冒泡排序-1/">关于冒泡排序</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="关于冒泡排序"><a href="#关于冒泡排序" class="headerlink" title="关于冒泡排序"></a>关于冒泡排序</h1><h3 id="定义：比较相邻的两个元素"><a href="#定义：比较相邻的两个元素" class="headerlink" title="定义：比较相邻的两个元素"></a>定义：比较相邻的两个元素</h3><p>比较相邻的两个元素，如果第一个元素比第二个元素大，则交换位置。对每一对元素都进行比较，直到没有任何数需要比较为止。</p>
-<h3 id="原理：如-要求一个数组需要从小到大排序"><a href="#原理：如-要求一个数组需要从小到大排序" class="headerlink" title="原理：如 要求一个数组需要从小到大排序"></a>原理：如 要求一个数组需要从小到大排序</h3><p>如 要求一个数组需要从小到大排序</p>
-<p>var arr = [3,46,19,5,48];</p>
-<p>第一次大循环，四次小循环：原数组是3,46,19,5,48;        </p>
-<pre><code>比较3和46         ==&gt;        3,46,19,5,48;            
-
-比较46和19       ==&gt;      3,19,46,5,48;    
-
-比较46和5         ==&gt;      3,19,5,46,48;
-
-比较46和48       ==&gt;      3,19,5,46,48;
-</code></pre><p>第二次大循环，三次小循环：原数组是3,19,5,46 ;//此时48已是最大数所以不用再比较    </p>
-<pre><code>​比较3和19         ==&gt;        3,19,5,46;            
-
-比较19和5         ==&gt;      3,5,19,46;    
-
-比较19和46       ==&gt;      3,5,19,46;
-</code></pre><p>第三次大循环，二次小循环：原数组是3,19,5;//此时46已是次大数所以不用再比较    </p>
-<pre><code>​比较3和19         ==&gt;        3,19,5;            
-
-比较19和5         ==&gt;      3,5,19;    
-</code></pre><p>第四次大循环，一次小循环：原数组是3,5;//此时19已是次次大数所以不用再比较    </p>
-<pre><code>​比较3和5         ==&gt;        3,5;        
-</code></pre><h3 id="公式：在html中写法如下："><a href="#公式：在html中写法如下：" class="headerlink" title="公式：在html中写法如下："></a>公式：在html中写法如下：</h3><p>var arr = [3,46,19,5,48];         //声明一个数组；</p>
-<pre><code>for    (var i=0; i &lt; arr.length-1;i++){             //大循环次数是数组长度的-1次
-
-    for(var j=0;j&lt;arr.length-i-1;j++){            //小循环次数是数组长度-大循环次数-1次
-
-        if(arr[j]&gt;arr[j+1]){                    
-
-            var tmp = arr[j];
-</code></pre><p>​                arr[j]=arr[j+1];</p>
-<pre><code>        arr[j+1]=tmp;
-
-    }
-
-}
-</code></pre><p>​    }</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://kainingyin.github.io/2019/04/24/关于冒泡排序-1/" data-id="cjw7p4nx00000b0l2bj6imbvy" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/kainingyin.github.io/2019/04/03/hello-world/" class="article-date">
-  <time datetime="2019-04-03T08:23:25.080Z" itemprop="datePublished">2019-04-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          node模块
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/kainingyin.github.io/2019/04/03/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/kainingyin.github.io/2019/04/24/关于冒泡排序-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">关于冒泡排序</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://kainingyin.github.io/2019/04/03/hello-world/" data-id="cjw7p4nx70001b0l281wn2f8y" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-我的第一篇博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/kainingyin.github.io/2018/01/03/我的第一篇博客/" class="article-date">
-  <time datetime="2018-01-03T10:13:25.000Z" itemprop="datePublished">2018-01-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/kainingyin.github.io/2018/01/03/我的第一篇博客/">我的第一篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>你好世界</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://kainingyin.github.io/2018/01/03/我的第一篇博客/" data-id="cjw7p4nxc0003b0l2hwfl4382" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/kainingyin.github.io/tags/我的第一/">我的第一</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
